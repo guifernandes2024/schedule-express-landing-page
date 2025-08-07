@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Mobile - ScheduleExpress</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>ScheduleExpress</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#beneficios">Benefícios</a></li>
+                <li><a href="#demo">Demo</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <div class="nav-cta">
+                <button class="btn-primary" onclick="scrollToSection('contato')">Solicitar Demo</button>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Soluções de Agendamento 
+                    <span class="gradient-text">Personalizadas</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Software de agendamento customizável para qualquer tipo de negócio. 
+                    Adapte cada funcionalidade conforme suas necessidades específicas.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="100">0</span>
+                        <span class="stat-label">% Personalizável</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="100">0</span>
+                        <span class="stat-label">% Produtividade</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="70">0</span>
+                        <span class="stat-label">% Economia</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <button class="btn-primary btn-large" onclick="scrollToSection('produtos')">
+                        <i class="fas fa-rocket"></i>
+                        Conhecer Produtos
+                    </button>
+                    <button class="btn-secondary btn-large" onclick="scrollToSection('demo')">
+                        <i class="fas fa-play"></i>
+                        Ver Demo
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Test Section -->
+    <section id="produtos" style="padding: 100px 0; background: #f0f0f0;">
+        <div class="container">
+            <h2>Seção de Teste</h2>
+            <p>Esta é uma seção de teste para verificar se o scroll está funcionando corretamente.</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="debug-mobile.js"></script>
+</body>
+</html> 

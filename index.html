@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScheduleExpress - Soluções de Agendamento Personalizadas</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="ScheduleExpress oferece soluções completas de agendamento personalizadas para qualquer tipo de negócio. Software customizável conforme suas necessidades." />
+    <meta name="keywords" content="agendamento online, software agendamento, consultoria, fotografia, academia, educação, serviços técnicos, software personalizado, customização" />
+    <meta name="author" content="ScheduleExpress" />
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="ScheduleExpress - Soluções de Agendamento Personalizadas" />
+    <meta property="og:description" content="Software de agendamento customizável para qualquer tipo de negócio. Adapte conforme suas necessidades." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://scheduleexpress.com" />
+    <meta property="og:image" content="images/scheduleexpress-hero.jpg" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="images/logo.svg" alt="ScheduleExpress" class="nav-logo-img">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#beneficios">Benefícios</a></li>
+                <li><a href="#demo">Demo</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <div class="nav-cta">
+                <button class="btn-primary" onclick="scrollToSection('contato')">Solicitar Demo</button>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Soluções e Automações
+                    <span class="gradient-text">  Personalizadas</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Software de agendamento e automação customizável para qualquer tipo de negócio. 
+                    Adapte cada funcionalidade conforme suas necessidades específicas.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="100">0</span>
+                        <span class="stat-label">% Personalizável</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="100">0</span>
+                        <span class="stat-label">% Produtividade</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="70">0</span>
+                        <span class="stat-label">% Economia</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <button class="btn-primary btn-large" onclick="scrollToSection('produtos')">
+                        <i class="fas fa-rocket"></i>
+                        Conhecer Produtos
+                    </button>
+                    <button class="btn-secondary btn-large" onclick="scrollToSection('demo')">
+                        <i class="fas fa-play"></i>
+                        Ver Demo
+                    </button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/hero-illustration.svg" alt="ScheduleExpress Dashboard" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="produtos" class="products-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nossos Produtos Base</h2>
+                <p>Softwares especializados que podem ser totalmente customizados para qualquer tipo de negócio</p>
+            </div>
+            
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>ScheduleExpress Business</h3>
+                    <p>Software completo para qualquer tipo de negócio que precise de agendamento.</p>
+                    <ul class="product-features">
+                        <li><i class="fas fa-check"></i> Agendamento online 24/7</li>
+                        <li><i class="fas fa-check"></i> Gestão de clientes</li>
+                        <li><i class="fas fa-check"></i> Lembretes automáticos</li>
+                        <li><i class="fas fa-check"></i> Relatórios detalhados</li>
+                        <li><i class="fas fa-check"></i> Integração com sistemas</li>
+                        <li><i class="fas fa-check"></i> <strong>100% Customizável</strong></li>
+                    </ul>
+                    <div class="customization-note">
+                        <i class="fas fa-cogs"></i>
+                        <span>Personalize funcionalidades, cores, campos e fluxos conforme sua necessidade</span>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>ScheduleExpress Professional</h3>
+                    <p>Software especializado para profissionais liberais e consultorias.</p>
+                    <ul class="product-features">
+                        <li><i class="fas fa-check"></i> Agendamento por serviço</li>
+                        <li><i class="fas fa-check"></i> Gestão de profissionais</li>
+                        <li><i class="fas fa-check"></i> Controle de disponibilidade</li>
+                        <li><i class="fas fa-check"></i> Fidelidade de clientes</li>
+                        <li><i class="fas fa-check"></i> Integração com pagamentos</li>
+                        <li><i class="fas fa-check"></i> <strong>100% Customizável</strong></li>
+                    </ul>
+                    <div class="customization-note">
+                        <i class="fas fa-cogs"></i>
+                        <span>Adapte cores, serviços, horários e funcionalidades ao seu negócio</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="customization-section">
+                <h3>Por que escolher a customização?</h3>
+                <div class="customization-grid">
+                    <div class="customization-item">
+                        <i class="fas fa-palette"></i>
+                        <h4>Identidade Visual</h4>
+                        <p>Cores, logos e layout personalizados com sua marca</p>
+                    </div>
+                    <div class="customization-item">
+                        <i class="fas fa-sliders-h"></i>
+                        <h4>Funcionalidades Específicas</h4>
+                        <p>Adicione ou remova recursos conforme sua necessidade</p>
+                    </div>
+                    <div class="customization-item">
+                        <i class="fas fa-code"></i>
+                        <h4>Integrações</h4>
+                        <p>Conecte com seus sistemas existentes</p>
+                    </div>
+                    <div class="customization-item">
+                        <i class="fas fa-users"></i>
+                        <h4>Fluxo de Trabalho</h4>
+                        <p>Adapte processos ao seu modo de operar</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="beneficios" class="benefits-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Benefícios da Customização</h2>
+                <p>Transforme seu negócio com um software feito sob medida</p>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Aumento de Produtividade</h3>
+                    <p>Processos otimizados especificamente para seu negócio resultam em maior eficiência</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-smile"></i>
+                    </div>
+                    <h3>Experiência do Cliente</h3>
+                    <p>Interface e fluxos adaptados proporcionam melhor experiência para seus clientes</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Segurança e Confiabilidade</h3>
+                    <p>Software robusto com backup automático e proteção de dados</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Multiplataforma</h3>
+                    <p>Acesse de qualquer dispositivo: computador, tablet ou smartphone</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Suporte Especializado</h3>
+                    <p>Equipe dedicada para ajudar na implementação e customização</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3>Atualizações Contínuas</h3>
+                    <p>Novas funcionalidades e melhorias sempre disponíveis</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section id="demo" class="demo-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Veja em Ação</h2>
+                <p>Conheça como nossos softwares funcionam na prática</p>
+            </div>
+            
+            <div class="demo-content">
+                <div class="demo-tabs">
+                    <div class="tab-buttons">
+                        <button class="tab-btn active" data-tab="dashboard" onclick="switchDemoTab('dashboard')">
+                            <i class="fas fa-tachometer-alt"></i>
+                            Dashboard
+                        </button>
+                        <button class="tab-btn" data-tab="agendamento" onclick="switchDemoTab('agendamento')">
+                            <i class="fas fa-calendar-alt"></i>
+                            Agendamento
+                        </button>
+                        <button class="tab-btn" data-tab="relatorios" onclick="switchDemoTab('relatorios')">
+                            <i class="fas fa-chart-line"></i>
+                            Relatórios
+                        </button>
+                        <button class="tab-btn" data-tab="configuracoes" onclick="switchDemoTab('configuracoes')">
+                            <i class="fas fa-cog"></i>
+                            Configurações
+                        </button>
+                    </div>
+                    
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="dashboard-tab">
+                            <div class="demo-screenshot">
+                                <div class="screenshot-placeholder">
+                                    <div class="screenshot-header">
+                                        <div class="screenshot-nav">
+                                            <div class="nav-dots">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <div class="nav-title">ScheduleExpress Dashboard</div>
+                                        </div>
+                                    </div>
+                                    <div class="screenshot-body">
+                                        <div class="dashboard-mockup">
+                                            <div class="mockup-sidebar">
+                                                <div class="sidebar-item active">
+                                                    <i class="fas fa-home"></i>
+                                                    <span>Dashboard</span>
+                                                </div>
+                                                <div class="sidebar-item">
+                                                    <i class="fas fa-calendar"></i>
+                                                    <span>Agendamentos</span>
+                                                </div>
+                                                <div class="sidebar-item">
+                                                    <i class="fas fa-users"></i>
+                                                    <span>Clientes</span>
+                                                </div>
+                                                <div class="sidebar-item">
+                                                    <i class="fas fa-chart-bar"></i>
+                                                    <span>Relatórios</span>
+                                                </div>
+                                            </div>
+                                            <div class="mockup-main">
+                                                <div class="mockup-header">
+                                                    <h3>Visão Geral</h3>
+                                                    <div class="mockup-stats">
+                                                        <div class="stat-box">
+                                                            <span class="stat-number" data-target="24">0</span>
+                                                            <span class="stat-label">Agendamentos Hoje</span>
+                                                        </div>
+                                                        <div class="stat-box">
+                                                            <span class="stat-number" data-target="8">0</span>
+                                                            <span class="stat-label">Pendentes</span>
+                                                        </div>
+                                                        <div class="stat-box">
+                                                            <span class="stat-number" data-target="156">0</span>
+                                                            <span class="stat-label">Clientes Ativos</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mockup-chart">
+                                                    <div class="chart-placeholder">
+                                                        <div class="chart-bar" style="height: 60%"></div>
+                                                        <div class="chart-bar" style="height: 80%"></div>
+                                                        <div class="chart-bar" style="height: 45%"></div>
+                                                        <div class="chart-bar" style="height: 90%"></div>
+                                                        <div class="chart-bar" style="height: 70%"></div>
+                                                        <div class="chart-bar" style="height: 85%"></div>
+                                                        <div class="chart-bar" style="height: 55%"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-pane" id="agendamento-tab">
+                            <div class="demo-screenshot">
+                                <div class="screenshot-placeholder">
+                                    <div class="screenshot-header">
+                                        <div class="screenshot-nav">
+                                            <div class="nav-dots">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <div class="nav-title">Agendamento Intuitivo</div>
+                                        </div>
+                                    </div>
+                                    <div class="screenshot-body">
+                                        <div class="calendar-mockup">
+                                            <div class="calendar-header">
+                                                <button class="calendar-nav"><i class="fas fa-chevron-left"></i></button>
+                                                <h4>Agosto 2024</h4>
+                                                <button class="calendar-nav"><i class="fas fa-chevron-right"></i></button>
+                                            </div>
+                                            <div class="calendar-grid">
+                                                <div class="calendar-day">
+                                                    <span class="day-number">15</span>
+                                                    <div class="appointment-slot">
+                                                        <span class="time">09:00</span>
+                                                        <span class="client">João Silva</span>
+                                                    </div>
+                                                </div>
+                                                <div class="calendar-day">
+                                                    <span class="day-number">16</span>
+                                                    <div class="appointment-slot">
+                                                        <span class="time">14:30</span>
+                                                        <span class="client">Maria Santos</span>
+                                                    </div>
+                                                </div>
+                                                <div class="calendar-day">
+                                                    <span class="day-number">17</span>
+                                                    <div class="appointment-slot">
+                                                        <span class="time">10:15</span>
+                                                        <span class="client">Carlos Costa</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-pane" id="relatorios-tab">
+                            <div class="demo-screenshot">
+                                <div class="screenshot-placeholder">
+                                    <div class="screenshot-header">
+                                        <div class="screenshot-nav">
+                                            <div class="nav-dots">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <div class="nav-title">Relatórios Detalhados</div>
+                                        </div>
+                                    </div>
+                                    <div class="screenshot-body">
+                                        <div class="reports-mockup">
+                                            <div class="report-card">
+                                                <h4>Faturamento Mensal</h4>
+                                                <div class="report-chart">
+                                                    <div class="chart-line">
+                                                        <div class="line-point" style="left: 10%; top: 80%"></div>
+                                                        <div class="line-point" style="left: 25%; top: 60%"></div>
+                                                        <div class="line-point" style="left: 40%; top: 40%"></div>
+                                                        <div class="line-point" style="left: 55%; top: 70%"></div>
+                                                        <div class="line-point" style="left: 70%; top: 30%"></div>
+                                                        <div class="line-point" style="left: 85%; top: 50%"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="report-stats">
+                                                    <div class="report-stat">
+                                                        <span class="stat-value">R$ 45.280</span>
+                                                        <span class="stat-label">Total</span>
+                                                    </div>
+                                                    <div class="report-stat">
+                                                        <span class="stat-value">+12%</span>
+                                                        <span class="stat-label">Crescimento</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-pane" id="configuracoes-tab">
+                            <div class="demo-screenshot">
+                                <div class="screenshot-placeholder">
+                                    <div class="screenshot-header">
+                                        <div class="screenshot-nav">
+                                            <div class="nav-dots">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <div class="nav-title">Configurações Avançadas</div>
+                                        </div>
+                                    </div>
+                                    <div class="screenshot-body">
+                                        <div class="settings-mockup">
+                                            <div class="settings-sidebar">
+                                                <div class="settings-item active">
+                                                    <i class="fas fa-palette"></i>
+                                                    <span>Aparência</span>
+                                                </div>
+                                                <div class="settings-item">
+                                                    <i class="fas fa-bell"></i>
+                                                    <span>Notificações</span>
+                                                </div>
+                                                <div class="settings-item">
+                                                    <i class="fas fa-shield-alt"></i>
+                                                    <span>Segurança</span>
+                                                </div>
+                                                <div class="settings-item">
+                                                    <i class="fas fa-database"></i>
+                                                    <span>Integrações</span>
+                                                </div>
+                                            </div>
+                                            <div class="settings-main">
+                                                <h4>Personalização da Interface</h4>
+                                                <div class="settings-form">
+                                                    <div class="form-group">
+                                                        <label>Cor Principal</label>
+                                                        <div class="color-picker">
+                                                            <div class="color-option active" style="background: #4F46E5"></div>
+                                                            <div class="color-option" style="background: #10B981"></div>
+                                                            <div class="color-option" style="background: #F59E0B"></div>
+                                                            <div class="color-option" style="background: #EF4444"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Logo da Empresa</label>
+                                                        <div class="upload-area">
+                                                            <i class="fas fa-cloud-upload-alt"></i>
+                                                            <span>Arraste sua logo aqui</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="demo-features">
+                    <h3>Funcionalidades Principais</h3>
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <i class="fas fa-calendar-check"></i>
+                            <div>
+                                <h4>Agendamento Intuitivo</h4>
+                                <p>Interface simples e rápida para criar e gerenciar agendamentos</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-bell"></i>
+                            <div>
+                                <h4>Notificações Automáticas</h4>
+                                <p>Lembretes por email, SMS e WhatsApp para clientes e profissionais</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-chart-bar"></i>
+                            <div>
+                                <h4>Relatórios Detalhados</h4>
+                                <p>Análises completas de performance, faturamento e produtividade</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-cog"></i>
+                            <div>
+                                <h4>Configurações Avançadas</h4>
+                                <p>Personalize cores, logos, campos e fluxos conforme sua necessidade</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <div>
+                                <h4>App Mobile Nativo</h4>
+                                <p>Acesse de qualquer lugar com aplicativo nativo para iOS e Android</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-paint-brush"></i>
+                            <div>
+                                <h4>Interface Customizável</h4>
+                                <p>Adapte a aparência e funcionalidades ao seu tipo de negócio</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="demo-cta">
+                <h3>Quer ver mais detalhes?</h3>
+                <p>Agende uma demonstração personalizada e descubra como podemos adaptar o software às suas necessidades específicas</p>
+                <button class="btn-primary btn-large" onclick="scrollToSection('contato')">
+                    <i class="fas fa-calendar-plus"></i>
+                    Agendar Demonstração
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>O que nossos clientes dizem</h2>
+                <p>Histórias reais de transformação digital</p>
+            </div>
+            
+                            <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"O ScheduleExpress revolucionou nosso negócio. A customização permitiu adaptar exatamente às nossas necessidades."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="images/testimonial-1.jpg" alt="Carlos Silva" loading="lazy">
+                            <div>
+                                <h4>Carlos Silva</h4>
+                                <span>Consultoria Empresarial</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Nossa empresa nunca mais foi a mesma. O software personalizado aumentou nossa produtividade em 40%."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="images/testimonial-2.jpg" alt="João Santos" loading="lazy">
+                            <div>
+                                <h4>João Santos</h4>
+                                <span>Studio de Fotografia</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"A customização foi fundamental. Conseguimos integrar com nossos sistemas existentes perfeitamente."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="images/testimonial-3.jpg" alt="Maria Costa" loading="lazy">
+                            <div>
+                                <h4>Maria Costa</h4>
+                                <span>Academia Fitness</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <!-- LGPD Section -->
+    <section class="lgpd-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Proteção de Dados e Privacidade</h2>
+                <p>Compromisso com a segurança e privacidade dos seus dados</p>
+            </div>
+            
+            <div class="lgpd-grid">
+                <div class="lgpd-card">
+                    <div class="lgpd-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Conformidade LGPD</h3>
+                    <p>Totalmente em conformidade com a Lei Geral de Proteção de Dados (LGPD), garantindo que seus dados estejam sempre seguros.</p>
+                </div>
+                
+                <div class="lgpd-card">
+                    <div class="lgpd-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Segurança Avançada</h3>
+                    <p>Implementamos as mais modernas tecnologias de segurança para proteger suas informações contra acessos não autorizados.</p>
+                </div>
+                
+                <div class="lgpd-card">
+                    <div class="lgpd-icon">
+                        <i class="fas fa-user-check"></i>
+                    </div>
+                    <h3>Controle Total</h3>
+                    <p>Você tem controle total sobre seus dados, podendo acessar, corrigir ou solicitar a exclusão a qualquer momento.</p>
+                </div>
+                
+                <div class="lgpd-card">
+                    <div class="lgpd-icon">
+                        <i class="fas fa-eye-slash"></i>
+                    </div>
+                    <h3>Transparência</h3>
+                    <p>Política de privacidade clara e transparente, informando exatamente como seus dados são utilizados.</p>
+                </div>
+            </div>
+            
+            <div class="lgpd-cta">
+                <p>Quer saber mais sobre como protegemos seus dados?</p>
+                <button class="btn-primary" onclick="openLgpdModal()">
+                    <i class="fas fa-file-alt"></i>
+                    Ver Política de Privacidade
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Comece sua Transformação Digital</h2>
+                <p>Solicite uma demonstração personalizada e descubra como podemos adaptar o software às suas necessidades</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Vamos conversar sobre seu projeto</h3>
+                    <p>Nossa equipe está pronta para entender suas necessidades e criar uma solução personalizada.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Telefone</h4>
+                                <p>+55 (11) 99999-9999</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>contato@scheduleexpress.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Horário</h4>
+                                <p>Segunda a Sexta: 8h às 18h</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="whatsappForm">
+                        <div class="form-group">
+                            <label for="name">Nome Completo *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Telefone *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="business">Tipo de Negócio *</label>
+                            <select id="business" name="business" required>
+                                <option value="">Selecione...</option>
+                                <option value="consultoria">Consultoria Empresarial</option>
+                                <option value="fotografia">Studio de Fotografia</option>
+                                <option value="academia">Academia/Fitness</option>
+                                <option value="educacao">Educação/Cursos</option>
+                                <option value="servicos">Serviços Técnicos</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Conte-nos sobre suas necessidades específicas..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary btn-large">
+                            <i class="fab fa-whatsapp"></i>
+                            Enviar via WhatsApp
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ScheduleExpress</h3>
+                    <p>Soluções de agendamento personalizadas para seu negócio crescer.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Produtos</h4>
+                    <ul>
+                        <li><a href="#produtos">ScheduleExpress Business</a></li>
+                        <li><a href="#produtos">ScheduleExpress Professional</a></li>
+                        <li><a href="#produtos">Customização</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Suporte</h4>
+                    <ul>
+                        <li><a href="#">Central de Ajuda</a></li>
+                        <li><a href="#">Documentação</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#" onclick="openLgpdModal()">Política de Privacidade</a></li>
+                        <li><a href="#">Termos de Uso</a></li>
+                        <li><a href="#">LGPD</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="#">Sobre Nós</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Carreiras</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 ScheduleExpress. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- LGPD Modal -->
+    <div id="lgpdModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Política de Privacidade e Proteção de Dados</h3>
+                <span class="close" onclick="closeLgpdModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="lgpd-section">
+                    <h4>1. Informações Gerais</h4>
+                    <p>A ScheduleExpress está comprometida em proteger a privacidade e os dados pessoais de seus usuários, em conformidade com a Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018).</p>
+                    
+                    <h4>2. Dados Coletados</h4>
+                    <p>Coletamos apenas os dados necessários para:</p>
+                    <ul>
+                        <li>Identificação e contato (nome, email, telefone)</li>
+                        <li>Informações sobre o negócio (tipo de atividade)</li>
+                        <li>Mensagens enviadas através do formulário de contato</li>
+                    </ul>
+                    
+                    <h4>3. Finalidade do Tratamento</h4>
+                    <p>Utilizamos seus dados para:</p>
+                    <ul>
+                        <li>Responder suas solicitações de demonstração</li>
+                        <li>Enviar informações sobre nossos produtos e serviços</li>
+                        <li>Melhorar nossos produtos com base no feedback</li>
+                        <li>Cumprir obrigações legais</li>
+                    </ul>
+                    
+                    <h4>4. Compartilhamento de Dados</h4>
+                    <p>Não vendemos, alugamos ou compartilhamos seus dados pessoais com terceiros, exceto quando:</p>
+                    <ul>
+                        <li>Explicitamente autorizado por você</li>
+                        <li>Necessário para cumprir obrigações legais</li>
+                        <li>Requerido para prestação de serviços essenciais</li>
+                    </ul>
+                    
+                    <h4>5. Segurança dos Dados</h4>
+                    <p>Implementamos medidas técnicas e organizacionais adequadas para proteger seus dados pessoais contra:</p>
+                    <ul>
+                        <li>Acesso não autorizado</li>
+                        <li>Alteração, divulgação ou destruição não autorizada</li>
+                        <li>Perda acidental</li>
+                    </ul>
+                    
+                    <h4>6. Seus Direitos</h4>
+                    <p>Você tem direito a:</p>
+                    <ul>
+                        <li>Acessar seus dados pessoais</li>
+                        <li>Corrigir dados incompletos, inexatos ou desatualizados</li>
+                        <li>Anonimizar, bloquear ou eliminar dados desnecessários</li>
+                        <li>Portabilidade dos dados</li>
+                        <li>Eliminação dos dados tratados com consentimento</li>
+                        <li>Revogar o consentimento a qualquer momento</li>
+                    </ul>
+                    
+                    <h4>7. Retenção de Dados</h4>
+                    <p>Mantemos seus dados pessoais apenas pelo tempo necessário para cumprir as finalidades para as quais foram coletados, conforme estabelecido em nossa política interna de retenção.</p>
+                    
+                    <h4>8. Cookies e Tecnologias Similares</h4>
+                    <p>Utilizamos cookies e tecnologias similares para melhorar sua experiência em nosso site. Você pode gerenciar suas preferências de cookies através das configurações do seu navegador.</p>
+                    
+                    <h4>9. Contato</h4>
+                    <p>Para exercer seus direitos ou esclarecer dúvidas sobre esta política, entre em contato conosco:</p>
+                    <ul>
+                        <li>Email: privacidade@scheduleexpress.com</li>
+                        <li>Telefone: +55 (11) 99999-9999</li>
+                        <li>Endereço: [Endereço da empresa]</li>
+                    </ul>
+                    
+                    <h4>10. Alterações na Política</h4>
+                    <p>Esta política pode ser atualizada periodicamente. Recomendamos que você revise esta página regularmente para se manter informado sobre nossas práticas de proteção de dados.</p>
+                    
+                    <p class="lgpd-date"><strong>Última atualização:</strong> Janeiro de 2024</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-primary" onclick="closeLgpdModal()">Entendi</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" onclick="scrollToTop()">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Cookie Banner -->
+    <div id="cookieBanner" class="cookie-banner">
+        <div class="cookie-content">
+            <div class="cookie-text">
+                <i class="fas fa-shield-alt"></i>
+                <p>Utilizamos cookies para melhorar sua experiência. Ao continuar navegando, você concorda com nossa <a href="#" onclick="openLgpdModal()">Política de Privacidade</a>.</p>
+            </div>
+            <div class="cookie-buttons">
+                <button class="btn-secondary" onclick="acceptCookies()">Aceitar</button>
+                <button class="btn-outline" onclick="rejectCookies()">Recusar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script src="debug.js"></script>
+</body>
+</html> 

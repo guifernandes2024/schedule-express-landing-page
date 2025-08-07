@@ -1,0 +1,85 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ef4444;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circles -->
+  <circle cx="100" cy="100" r="50" fill="url(#grad1)" opacity="0.1"/>
+  <circle cx="500" cy="300" r="80" fill="url(#grad2)" opacity="0.1"/>
+  <circle cx="450" cy="80" r="30" fill="url(#grad1)" opacity="0.2"/>
+  
+  <!-- Calendar icon -->
+  <g transform="translate(200, 150)">
+    <rect x="0" y="0" width="200" height="150" rx="10" fill="url(#grad1)" stroke="#4f46e5" stroke-width="2"/>
+    <rect x="0" y="0" width="200" height="40" rx="10" fill="#4f46e5"/>
+    <text x="100" y="25" text-anchor="middle" fill="white" font-family="Arial" font-size="16" font-weight="bold">AGENDA</text>
+    
+    <!-- Calendar grid -->
+    <g transform="translate(20, 60)">
+      <!-- Days of week -->
+      <text x="0" y="0" fill="#6b7280" font-family="Arial" font-size="10">D</text>
+      <text x="25" y="0" fill="#6b7280" font-family="Arial" font-size="10">S</text>
+      <text x="50" y="0" fill="#6b7280" font-family="Arial" font-size="10">T</text>
+      <text x="75" y="0" fill="#6b7280" font-family="Arial" font-size="10">Q</text>
+      <text x="100" y="0" fill="#6b7280" font-family="Arial" font-size="10">Q</text>
+      <text x="125" y="0" fill="#6b7280" font-family="Arial" font-size="10">S</text>
+      <text x="150" y="0" fill="#6b7280" font-family="Arial" font-size="10">S</text>
+      
+      <!-- Calendar numbers -->
+      <text x="0" y="20" fill="#374151" font-family="Arial" font-size="10">1</text>
+      <text x="25" y="20" fill="#374151" font-family="Arial" font-size="10">2</text>
+      <text x="50" y="20" fill="#374151" font-family="Arial" font-size="10">3</text>
+      <text x="75" y="20" fill="#374151" font-family="Arial" font-size="10">4</text>
+      <text x="100" y="20" fill="#374151" font-family="Arial" font-size="10">5</text>
+      <text x="125" y="20" fill="#374151" font-family="Arial" font-size="10">6</text>
+      <text x="150" y="20" fill="#374151" font-family="Arial" font-size="10">7</text>
+      
+      <text x="0" y="40" fill="#374151" font-family="Arial" font-size="10">8</text>
+      <text x="25" y="40" fill="#374151" font-family="Arial" font-size="10">9</text>
+      <text x="50" y="40" fill="#374151" font-family="Arial" font-size="10">10</text>
+      <text x="75" y="40" fill="#374151" font-family="Arial" font-size="10">11</text>
+      <text x="100" y="40" fill="#374151" font-family="Arial" font-size="10">12</text>
+      <text x="125" y="40" fill="#374151" font-family="Arial" font-size="10">13</text>
+      <text x="150" y="40" fill="#374151" font-family="Arial" font-size="10">14</text>
+      
+      <text x="0" y="60" fill="#374151" font-family="Arial" font-size="10">15</text>
+      <text x="25" y="60" fill="#374151" font-family="Arial" font-size="10">16</text>
+      <text x="50" y="60" fill="#374151" font-family="Arial" font-size="10">17</text>
+      <text x="75" y="60" fill="#374151" font-family="Arial" font-size="10">18</text>
+      <text x="100" y="60" fill="#374151" font-family="Arial" font-size="10">19</text>
+      <text x="125" y="60" fill="#374151" font-family="Arial" font-size="10">20</text>
+      <text x="150" y="60" fill="#374151" font-family="Arial" font-size="10">21</text>
+    </g>
+  </g>
+  
+  <!-- Clock icon -->
+  <g transform="translate(350, 200)">
+    <circle cx="0" cy="0" r="40" fill="white" stroke="url(#grad2)" stroke-width="3"/>
+    <circle cx="0" cy="0" r="2" fill="#f59e0b"/>
+    <line x1="0" y1="0" x2="0" y2="-25" stroke="#f59e0b" stroke-width="2" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="20" y2="0" stroke="#f59e0b" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Checkmark icons -->
+  <g transform="translate(450, 120)">
+    <circle cx="0" cy="0" r="15" fill="url(#grad1)" opacity="0.8"/>
+    <path d="M-5,0 L0,5 L8,-3" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  
+  <g transform="translate(480, 150)">
+    <circle cx="0" cy="0" r="15" fill="url(#grad2)" opacity="0.8"/>
+    <path d="M-5,0 L0,5 L8,-3" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  
+  <g transform="translate(510, 180)">
+    <circle cx="0" cy="0" r="15" fill="url(#grad1)" opacity="0.8"/>
+    <path d="M-5,0 L0,5 L8,-3" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg> 

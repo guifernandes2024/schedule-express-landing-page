@@ -1,0 +1,35 @@
+<svg width="192" height="192" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="iconGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="192" height="192" rx="24" fill="url(#iconGrad)"/>
+  
+  <!-- Calendar icon -->
+  <g transform="translate(96, 96)">
+    <rect x="-40" y="-30" width="80" height="60" rx="8" fill="white" opacity="0.95"/>
+    <rect x="-40" y="-30" width="80" height="20" rx="8" fill="#4f46e5"/>
+    
+    <!-- Calendar text -->
+    <text x="0" y="-15" text-anchor="middle" fill="white" font-family="Arial" font-size="12" font-weight="bold">SCHEDULE</text>
+    <text x="0" y="-2" text-anchor="middle" fill="white" font-family="Arial" font-size="12" font-weight="bold">EXPRESS</text>
+    
+    <!-- Calendar grid -->
+    <g transform="translate(-30, 5)">
+      <text x="0" y="0" fill="#6b7280" font-family="Arial" font-size="8">D</text>
+      <text x="15" y="0" fill="#6b7280" font-family="Arial" font-size="8">S</text>
+      <text x="30" y="0" fill="#6b7280" font-family="Arial" font-size="8">T</text>
+      <text x="45" y="0" fill="#6b7280" font-family="Arial" font-size="8">Q</text>
+      <text x="60" y="0" fill="#6b7280" font-family="Arial" font-size="8">Q</text>
+      
+      <text x="0" y="15" fill="#374151" font-family="Arial" font-size="8">1</text>
+      <text x="15" y="15" fill="#374151" font-family="Arial" font-size="8">2</text>
+      <text x="30" y="15" fill="#374151" font-family="Arial" font-size="8">3</text>
+      <text x="45" y="15" fill="#374151" font-family="Arial" font-size="8">4</text>
+      <text x="60" y="15" fill="#374151" font-family="Arial" font-size="8">5</text>
+    </g>
+  </g>
+</svg> 
