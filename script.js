@@ -81,7 +81,7 @@ function animateCounters() {
 
 // Envio do formulário para WhatsApp
 function sendToWhatsApp(formData) {
-    const phoneNumber = '5511999999999'; // Substitua pelo número real
+    const phoneNumber = '5583991791407'; // Substitua pelo número real
     const message = `
 🔄 *Nova Solicitação - ScheduleExpress*
 
@@ -631,4 +631,5 @@ document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
         closeLgpdModal();
     }
+
 }); 
