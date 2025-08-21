@@ -2,20 +2,11 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://scheduleexpress.com/sitemap.xml
+Sitemap: https://ScheduleX.com/sitemap.xml
 
 # Crawl-delay
 Crawl-delay: 1
 
-# Disallow admin and API paths
+# Disallow admin areas (if any)
 Disallow: /admin/
-Disallow: /api/
-Disallow: /_framework/
-Disallow: /_blazor/
-
-# Allow important pages
-Allow: /
-Allow: /produtos
-Allow: /beneficios
-Allow: /demo
-Allow: /contato 
+Disallow: /private/ 

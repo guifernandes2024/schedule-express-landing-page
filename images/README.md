@@ -1,6 +1,6 @@
-# ScheduleExpress Logos
+# ScheduleX Logos
 
-Este diretório contém as logos da ScheduleExpress em diferentes formatos e tamanhos.
+Este diretório contém as logos da ScheduleX em diferentes formatos e tamanhos.
 
 ## Arquivos Disponíveis
 
@@ -10,7 +10,7 @@ Este diretório contém as logos da ScheduleExpress em diferentes formatos e tam
 - **Características**: 
   - Design completo com ícone de calendário
   - Gradiente azul profissional
-  - Texto "ScheduleExpress" com tagline
+  - Texto "ScheduleX" com tagline
   - Sombra sutil para profundidade
 
 ### `logo-minimal.svg`

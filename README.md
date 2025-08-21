@@ -1,4 +1,4 @@
-# ScheduleExpress Landing Page
+# ScheduleX Landing Page
 
 Uma landing page moderna, responsiva e otimizada para conversão, desenvolvida em HTML puro, CSS e JavaScript.
 
@@ -27,7 +27,7 @@ Uma landing page moderna, responsiva e otimizada para conversão, desenvolvida e
 ## 📁 Estrutura de Arquivos
 
 ```
-scheduleexpress-landing/
+ScheduleX-landing/
 ├── index.html              # Página principal
 ├── styles.css              # Estilos CSS
 ├── script.js               # JavaScript
@@ -192,10 +192,10 @@ RewriteRule ^(.*)$ index.html [L]
 ## 📞 Suporte
 
 Para dúvidas ou personalizações:
-- **Email**: contato@scheduleexpress.com
+- **Email**: contato@ScheduleX.com
 - **WhatsApp**: +55 (11) 99999-9999
 - **Documentação**: [Link para docs]
 
 ---
 
-**Desenvolvido com ❤️ para ScheduleExpress** 
+**Desenvolvido com ❤️ para ScheduleX** 

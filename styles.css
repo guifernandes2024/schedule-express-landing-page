@@ -1078,6 +1078,9 @@ p {
     height: 50px;
     border-radius: 50%;
     object-fit: cover;
+    display: block;
+    background-color: #f3f4f6;
+    border: 2px solid var(--border-color);
 }
 
 .testimonial-author h4 {
@@ -1088,6 +1091,60 @@ p {
 .testimonial-author span {
     color: var(--text-secondary);
     font-size: 0.875rem;
+}
+
+/* Fallback para imagens de depoimentos */
+.testimonial-author img:not([src]), 
+.testimonial-author img[src=""],
+.testimonial-author img[src*="error"] {
+    display: none;
+}
+
+.testimonial-author div {
+    margin-left: 1rem;
+}
+
+.testimonial-author img:not([src]) + div,
+.testimonial-author img[src=""] + div,
+.testimonial-author img[src*="error"] + div {
+    margin-left: 0;
+}
+
+/* FAQ Section */
+.faq-section {
+    padding: 5rem 0;
+    background: var(--bg-primary);
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.faq-item {
+    background: var(--bg-secondary);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-color);
+    transition: var(--transition);
+}
+
+.faq-item:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.faq-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+.faq-item p {
+    color: var(--text-secondary);
+    line-height: 1.6;
 }
 
 /* LGPD Section */
@@ -1722,6 +1779,10 @@ p {
     }
     
     .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .faq-grid {
         grid-template-columns: 1fr;
     }
     

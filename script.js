@@ -1,4 +1,4 @@
-// ScheduleExpress Landing Page JavaScript
+// ScheduleX Landing Page JavaScript
 
 // Smooth scrolling para links internos
 function scrollToSection(target) {
@@ -83,7 +83,7 @@ function animateCounters() {
 function sendToWhatsApp(formData) {
     const phoneNumber = '5583991791407'; // Substitua pelo número real
     const message = `
-🔄 *Nova Solicitação - ScheduleExpress*
+🔄 *Nova Solicitação - ScheduleX*
 
 👤 *Nome:* ${formData.name}
 📧 *Email:* ${formData.email}
@@ -92,7 +92,7 @@ function sendToWhatsApp(formData) {
 💬 *Mensagem:* ${formData.message || 'Não informado'}
 
 ---
-*Enviado via ScheduleExpress Landing Page*
+*Enviado via ScheduleX Landing Page*
     `.trim();
     
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
@@ -243,20 +243,20 @@ function addStructuredData() {
     const structuredData = {
         "@context": "https://schema.org",
         "@type": "Organization",
-        "name": "ScheduleExpress",
+        "name": "ScheduleX",
         "description": "Soluções de agendamento personalizadas para consultórios clínicos e salões de beleza",
-        "url": "https://scheduleexpress.com",
-        "logo": "https://scheduleexpress.com/images/logo.png",
+        "url": "https://ScheduleX.com.br",
+        "logo": "https://ScheduleX.com.br/images/logo.png",
         "contactPoint": {
             "@type": "ContactPoint",
             "telephone": "+55-11-99999-9999",
             "contactType": "customer service",
-            "email": "contato@scheduleexpress.com"
+            "email": "contato@ScheduleX.com"
         },
         "sameAs": [
-            "https://linkedin.com/company/scheduleexpress",
-            "https://facebook.com/scheduleexpress",
-            "https://instagram.com/scheduleexpress"
+            "https://linkedin.com/company/ScheduleX",
+            "https://facebook.com/ScheduleX",
+            "https://instagram.com/ScheduleX"
         ]
     };
 
@@ -631,5 +631,47 @@ document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
         closeLgpdModal();
     }
+});
 
-}); 
+// Image loading optimization and fallbacks
+document.addEventListener('DOMContentLoaded', function() {
+    // Handle testimonial images
+    const testimonialImages = document.querySelectorAll('.testimonial-author img');
+    
+    testimonialImages.forEach(img => {
+        img.addEventListener('error', function() {
+            // Hide the image and adjust layout
+            this.style.display = 'none';
+            const authorInfo = this.nextElementSibling;
+            if (authorInfo) {
+                authorInfo.style.marginLeft = '0';
+            }
+        });
+        
+        img.addEventListener('load', function() {
+            // Add a subtle animation when image loads
+            this.style.opacity = '0';
+            this.style.transition = 'opacity 0.3s ease';
+            setTimeout(() => {
+                this.style.opacity = '1';
+            }, 100);
+        });
+    });
+    
+    // Lazy loading for images
+    const lazyImages = document.querySelectorAll('img[loading="lazy"]');
+    const imageObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const img = entry.target;
+                img.src = img.dataset.src || img.src;
+                img.classList.remove('lazy');
+                observer.unobserve(img);
+            }
+        });
+    });
+    
+    lazyImages.forEach(img => {
+        imageObserver.observe(img);
+    });
+});
