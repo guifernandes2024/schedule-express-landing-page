@@ -98,7 +98,46 @@ p {
 
 .btn-large {
     padding: 16px 32px;
-    font-size: 1.1rem;
+}
+
+/* Font Awesome Icons */
+.fas, .fab, .far, .fal {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+/* Ensure icons are visible */
+.btn-primary i,
+.btn-secondary i,
+.nav-menu i,
+.footer i {
+    display: inline-block !important;
+    margin-right: 0.5rem;
+}
+
+/* Social links icons should be perfectly centered without margin */
+.social-links i {
+    display: inline-block !important;
+    margin: 0 !important;
+}
+
+/* Debug: Force icon visibility */
+.fas, .fab, .far, .fal {
+    display: inline-block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* Fallback for missing icons */
+.fas::before,
+.fab::before,
+.far::before,
+.fal::before {
+    content: attr(data-icon);
+    display: inline-block;
 }
 
 /* Navigation */

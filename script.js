@@ -15,12 +15,20 @@ function scrollToSection(target) {
 function showNotification(message, type = 'info') {
     const notification = document.createElement('div');
     notification.className = `notification notification-${type}`;
-    notification.innerHTML = `
-        <div class="notification-content">
-            <i class="fas fa-${type === 'success' ? 'check-circle' : type === 'error' ? 'exclamation-circle' : 'info-circle'} me-2"></i>
-            <span>${message}</span>
-        </div>
-    `;
+    
+    const notificationContent = document.createElement('div');
+    notificationContent.className = 'notification-content';
+    
+    const icon = document.createElement('i');
+    const iconClass = type === 'success' ? 'check-circle' : type === 'error' ? 'exclamation-circle' : 'info-circle';
+    icon.className = `fas fa-${iconClass} me-2`;
+    
+    const messageSpan = document.createElement('span');
+    messageSpan.textContent = message;
+    
+    notificationContent.appendChild(icon);
+    notificationContent.appendChild(messageSpan);
+    notification.appendChild(notificationContent);
     
     document.body.appendChild(notification);
     
@@ -81,7 +89,7 @@ function animateCounters() {
 
 // Envio do formulário para WhatsApp
 function sendToWhatsApp(formData) {
-    const phoneNumber = '5583991791407'; // Substitua pelo número real
+    const phoneNumber = '5583991791407'; // Número de contato oficial
     const message = `
 🔄 *Nova Solicitação - ScheduleX*
 
@@ -96,7 +104,12 @@ function sendToWhatsApp(formData) {
     `.trim();
     
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-    window.open(whatsappUrl, '_blank');
+    // Abrir WhatsApp de forma segura
+    const link = document.createElement('a');
+    link.href = whatsappUrl;
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+    link.click();
 }
 
 // Validação do formulário
@@ -245,18 +258,18 @@ function addStructuredData() {
         "@type": "Organization",
         "name": "ScheduleX",
         "description": "Soluções de agendamento personalizadas para consultórios clínicos e salões de beleza",
-        "url": "https://ScheduleX.com.br",
-        "logo": "https://ScheduleX.com.br/images/logo.png",
+        "url": "https://schedulex.com.br",
+        "logo": "https://schedulex.com.br/images/logo.svg",
         "contactPoint": {
             "@type": "ContactPoint",
-            "telephone": "+55-11-99999-9999",
+            "telephone": "+55-83-99179-1407",
             "contactType": "customer service",
-            "email": "contato@ScheduleX.com"
+            "email": "contato@schedulex.com.br"
         },
         "sameAs": [
-            "https://linkedin.com/company/ScheduleX",
-            "https://facebook.com/ScheduleX",
-            "https://instagram.com/ScheduleX"
+            "https://linkedin.com/company/schedulex",
+            "https://facebook.com/schedulex",
+            "https://instagram.com/schedulex"
         ]
     };
 
@@ -268,6 +281,32 @@ function addStructuredData() {
 
 // Inicialização quando o DOM estiver carregado
 document.addEventListener('DOMContentLoaded', function() {
+    
+    // Verificar se Font Awesome foi carregado
+    function checkFontAwesome() {
+        const testIcon = document.createElement('i');
+        testIcon.className = 'fas fa-check';
+        testIcon.style.position = 'absolute';
+        testIcon.style.left = '-9999px';
+        document.body.appendChild(testIcon);
+        
+        const computedStyle = window.getComputedStyle(testIcon, ':before');
+        const fontFamily = computedStyle.getPropertyValue('font-family');
+        
+        document.body.removeChild(testIcon);
+        
+        if (!fontFamily.includes('FontAwesome') && !fontFamily.includes('Font Awesome')) {
+            console.warn('Font Awesome não foi carregado corretamente');
+            // Tentar recarregar
+            const link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css';
+            document.head.appendChild(link);
+        }
+    }
+    
+    // Verificar Font Awesome após um pequeno delay
+    setTimeout(checkFontAwesome, 1000);
     
     // Adicionar listeners para botões de scroll
     document.querySelectorAll('[data-scroll]').forEach(button => {
